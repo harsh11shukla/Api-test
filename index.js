@@ -23,7 +23,7 @@ db.connect(err => {
 });
 
 app.get('/',(req,res)=>{
-    res.send('<h1>Hello there</h1><h2>API =>    /addSchool    </br>*it is a POST method with Fields(name, address, latitude, longitude)</h2></br></br><h2>API =>    listSchools?latitude=51.5074&longitude=-0.1278    </br>*it is a GET method with query Fields(latitude, longitude)</h2>')
+    res.send('<h1>Hello there</h1><h2>API =>    /addSchool    </br>*it is a POST method with Fields(name, address, latitude, longitude)</h2></br></br><h2>API =>    /listSchools?latitude=51.5074&longitude=-0.1278    </br>*it is a GET method with query Fields(latitude, longitude)</h2>')
     res.end()
 })
 
